@@ -9,6 +9,7 @@
     "build": "vite build"
   },
   "dependencies": {
+    "@fontsource/inter": "^5.2.8",
     "@onlycards/product": "*"
   }
 }
