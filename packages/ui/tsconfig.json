@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "jsx": "react-jsx",
+    "skipLibCheck": true,
+    "module": "preserve",
+    "moduleResolution": "bundler",
+
+    /* Alias */
+    "paths": { "@/*": ["./src/*"] }
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx"]
+}

@@ -1,0 +1,14 @@
+{
+  "name": "@onlycards/landing",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "ts": "tsc --noemit",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "@onlycards/ui": "*",
+    "@onlycards/product": "*"
+  }
+}
