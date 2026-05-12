@@ -4,6 +4,7 @@
     "jsx": "react-jsx",
     "skipLibCheck": true,
     "module": "preserve",
+    "types": ["vite/client"],
     "moduleResolution": "bundler",
 
     /* Alias */
