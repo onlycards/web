@@ -1,0 +1,74 @@
+.card-face {
+  position: relative;
+  width: 320px;
+  height: 460px;
+  border-radius: 24px;
+  font-family: Inter, sans-serif;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.22);
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  &.front {
+    color: dimgray;
+    background: linear-gradient(40deg, white 40%, #e6ede6);
+  }
+
+  &.back {
+    color: papayawhip;
+    background: linear-gradient(45deg, #497a49 20%, #7cc47c);
+  }
+
+  .info {
+    height: 32px;
+    border-bottom: solid #00000010 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+    font-size: 12px;
+  }
+
+  .prefix, .postfix {
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    overflow: hidden;
+
+    span {
+      height: 18px;
+    }
+  }
+
+  .main {
+    font-weight: 500;
+    height: 120px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  button.cover {
+    position: absolute;
+    inset: 0;
+    border: unset;
+    border-radius: inherit;
+    opacity: 0;
+  }
+
+  button.play {
+    position: absolute;
+    bottom: 32px;
+    left: 140px;
+    width: 40px;
+    height: 40px;
+    border: unset;
+    background: center / contain no-repeat url(@/assets/icons/play.png);
+    opacity: 0.2;
+  }
+}

@@ -68,7 +68,15 @@ export default defineConfig(
     rules: {
       'perfectionist/sort-objects': [2, { order: 'asc', type: 'line-length' }],
       'perfectionist/sort-exports': [2, { order: 'asc', type: 'line-length' }],
+      'perfectionist/sort-jsx-props': [
+        2,
+        { order: 'asc', type: 'line-length' },
+      ],
       'perfectionist/sort-interfaces': [
+        2,
+        { order: 'asc', type: 'line-length' },
+      ],
+      'perfectionist/sort-object-types': [
         2,
         { order: 'asc', type: 'line-length' },
       ],
