@@ -1,0 +1,17 @@
+.ui-label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  span {
+    font-size: 18px;
+    color: gray;
+  }
+
+  .ui-input {
+    box-sizing: border-box;
+    min-height: 40px;
+    font-size: 18px;
+    padding-left: 8px;
+  }
+}

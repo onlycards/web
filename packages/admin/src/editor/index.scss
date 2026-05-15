@@ -1,0 +1,39 @@
+.card-editor {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 800px;
+
+  .common {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    .double {
+      display: flex;
+      gap: 16px;
+
+      &> * {
+        flex-grow: 1;
+      }
+    }
+  }
+
+  .side {
+    display: flex;
+
+    .form {
+      flex-grow: 1;
+      padding-right: 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .example {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
