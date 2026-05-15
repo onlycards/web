@@ -1,0 +1,21 @@
+.flip-card {
+  perspective: 1200px;
+  user-select: none;
+  width: 320px;
+  height: 460px;
+
+  .sides {
+    position: relative;
+    transform-style: preserve-3d;
+
+    .side {
+      position: absolute;
+      inset: 0;
+      backface-visibility: hidden;
+
+      &.back {
+        transform: rotateY(180deg);
+      }
+    }
+  }
+}

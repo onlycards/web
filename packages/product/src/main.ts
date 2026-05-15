@@ -1,1 +1,1 @@
-export const example = 5
+export type { SupportedLang, CardFaceContent } from './types'

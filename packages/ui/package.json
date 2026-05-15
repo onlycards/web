@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@fontsource/inter": "^5.2.8",
-    "@onlycards/product": "*"
+    "@onlycards/product": "*",
+    "motion": "^12.38.0"
   }
 }
