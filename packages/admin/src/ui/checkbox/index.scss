@@ -1,0 +1,12 @@
+.check-box {
+  display: flex;
+  height: 32px;
+  font-size: 18px;
+  align-items: center;
+  gap: 4px;
+
+  input {
+    width: 16px;
+    height: 16px;
+  }
+}

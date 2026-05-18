@@ -54,6 +54,7 @@ export default defineConfig(
   {
     // react
     rules: {
+      'react/jsx-key': 2,
       'react/self-closing-comp': [
         2,
         {
