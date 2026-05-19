@@ -1,6 +1,6 @@
 import { FC, useState } from 'react'
 import { CardFace } from '@onlycards/ui'
-import { SupportedLang } from '@onlycards/product'
+import { SupportedLang } from '@onlycards/service'
 
 import { CheckBox, MultiLine, TextInput, NumberInput, LangSelector } from '@/ui'
 

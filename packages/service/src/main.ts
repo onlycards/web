@@ -1,1 +1,3 @@
-export const example = 5
+export * from '@/admin'
+export * from '@/client'
+export * from '@/common'

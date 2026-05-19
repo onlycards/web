@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import { SupportedLang } from '@onlycards/product'
+import { SupportedLang } from '@onlycards/service'
 
 import { LangSelectorProps } from './types'
 
