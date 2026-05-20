@@ -8,7 +8,6 @@
     "build": "vite build"
   },
   "dependencies": {
-    "@onlycards/ui": "*",
-    "@onlycards/product": "*"
+    "@onlycards/ui": "*"
   }
 }

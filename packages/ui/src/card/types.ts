@@ -1,4 +1,4 @@
-import { SupportedLang, CardFaceContent } from '@onlycards/product'
+import { SupportedLang, CardFaceContent } from '@onlycards/service'
 
 export type CardFaceProps = {
   setTitle: string

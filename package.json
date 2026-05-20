@@ -9,14 +9,13 @@
     "dev:client": "npm run dev -w @onlycards/client",
     "dev:admin": "npm run dev -w @onlycards/admin",
     "dev:landing": "npm run dev -w @onlycards/landing",
-    "build:product": "npm run build -w @onlycards/product",
     "build:ui": "npm run build -w @onlycards/ui",
     "build:service": "npm run build -w @onlycards/service",
     "build:client": "npm run build -w @onlycards/client",
     "build:admin": "npm run build -w @onlycards/admin",
     "build:landing": "npm run build -w @onlycards/landing",
-    "build": "npm run build:product && npm run build:ui && npm run build:service && npm run build:client && npm run build:admin && npm run build:landing",
-    "ts": "npm run ts -w @onlycards/product && npm run ts -w @onlycards/ui && npm run ts -w @onlycards/service && npm run ts -w @onlycards/client && npm run ts -w @onlycards/admin && npm run ts -w @onlycards/landing"
+    "build": "npm run build:service && npm run build:ui && npm run build:client && npm run build:admin && npm run build:landing",
+    "ts": "npm run ts -w @onlycards/service && npm run ts -w @onlycards/ui && npm run ts -w @onlycards/client && npm run ts -w @onlycards/admin && npm run ts -w @onlycards/landing"
   },
   "dependencies": {
     "react": "^19.2.4",

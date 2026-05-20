@@ -9,7 +9,6 @@
   },
   "dependencies": {
     "@onlycards/ui": "*",
-    "@onlycards/product": "*",
     "@onlycards/service": "*"
   }
 }

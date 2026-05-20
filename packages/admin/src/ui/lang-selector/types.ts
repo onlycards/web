@@ -1,4 +1,4 @@
-import { SupportedLang } from '@onlycards/product'
+import { SupportedLang } from '@onlycards/service'
 
 export type LangSelectorProps = {
   name: string

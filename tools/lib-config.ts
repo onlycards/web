@@ -25,7 +25,6 @@ export const createLibConfig = (packageRoot: string) =>
           'react',
           'react/jsx-runtime',
           '@onlycards/ui',
-          '@onlycards/product',
           '@onlycards/service',
         ],
       },
