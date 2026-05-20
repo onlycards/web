@@ -4,30 +4,30 @@
   background: center / contain no-repeat;
 
   &.ru {
-    background-image: url(@/assets/flags/ru.webp);
+    background-image: url("@/assets/flags/ru.webp");
   }
 
   &.en {
-    background-image: url(@/assets/flags/en.webp);
+    background-image: url("@/assets/flags/en.webp");
   }
 
   &.es {
-    background-image: url(@/assets/flags/es.webp);
+    background-image: url("@/assets/flags/es.webp");
   }
 
   &.de {
-    background-image: url(@/assets/flags/de.webp);
+    background-image: url("@/assets/flags/de.webp");
   }
 
   &.fr {
-    background-image: url(@/assets/flags/fr.webp);
+    background-image: url("@/assets/flags/fr.webp");
   }
 
   &.it {
-    background-image: url(@/assets/flags/it.webp);
+    background-image: url("@/assets/flags/it.webp");
   }
 
   &.pt {
-    background-image: url(@/assets/flags/pt.webp);
+    background-image: url("@/assets/flags/pt.webp");
   }
 }
