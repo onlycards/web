@@ -33,7 +33,9 @@ export default defineConfig(
   {
     // common
     rules: {
+      'no-return-await': 2,
       'prefer-template': 2,
+      'object-shorthand': 2,
       'arrow-body-style': 2,
       '@typescript-eslint/no-non-null-assertion': 2,
     },
@@ -82,6 +84,10 @@ export default defineConfig(
         { order: 'asc', type: 'line-length' },
       ],
       'perfectionist/sort-named-imports': [
+        2,
+        { order: 'asc', type: 'line-length' },
+      ],
+      'perfectionist/sort-named-exports': [
         2,
         { order: 'asc', type: 'line-length' },
       ],

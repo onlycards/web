@@ -50,6 +50,6 @@ const exampleData: ClientData = {
 export const getClientData = () =>
   new Promise<ClientData | null>(resolve => {
     setTimeout(() => {
-      resolve(Math.random() > 0.5 ? exampleData : null)
+      resolve(Math.random() > 0.4 ? exampleData : null)
     }, 400)
   })
