@@ -77,7 +77,9 @@
 
     &:not(:disabled):hover {
       background: green;
-      box-shadow: 0 0 0 2px white, 0 0 0 4px lightgreen;
+      box-shadow:
+        0 0 0 2px white,
+        0 0 0 4px lightgreen;
     }
 
     &:not(:disabled):active {
