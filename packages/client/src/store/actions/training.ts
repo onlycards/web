@@ -2,14 +2,14 @@ import { CreateTrainingActions } from '../types'
 
 export const createTrainingActions: CreateTrainingActions = (set, get) => ({
   stopTraining() {
-    set(() => ({ trainingInProgress: false }))
+    set(() => ({ trainingInProgress: null }))
   },
-  startTraining() {
+  startTraining(inverted) {
     if (!get().selectedDecks.length) {
       throw new Error('No decks selected')
     }
 
-    set(() => ({ trainingInProgress: true }))
+    set(() => ({ trainingInProgress: inverted ? 'inverted' : 'regular' }))
   },
   toggleSelectedDeck(id) {
     const currentIndex = get().selectedDecks.indexOf(id)

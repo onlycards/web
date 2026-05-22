@@ -4,7 +4,7 @@ import { CreateAuthActions } from '../types'
 
 export const createAuthActions: CreateAuthActions = (set, get) => ({
   async logOut() {
-    set({ clientData: null, selectedDecks: [], trainingInProgress: false })
+    set({ clientData: null, selectedDecks: [], trainingInProgress: null })
 
     return logClientOut()
   },

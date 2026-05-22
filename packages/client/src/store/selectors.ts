@@ -63,3 +63,6 @@ export const useStartTraining = () =>
 
 export const useStopTraining = () =>
   useClientStore(({ stopTraining }) => stopTraining)
+
+export const useIsTrainingInverted = () =>
+  useClientStore(({ trainingInProgress }) => trainingInProgress === 'inverted')
