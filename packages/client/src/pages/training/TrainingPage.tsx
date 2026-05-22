@@ -1,11 +1,16 @@
 import { FC } from 'react'
 import { FlipCard } from '@onlycards/ui'
 
-import { useStopTraining, useTrainingDecks } from '@/store'
+import {
+  useStopTraining,
+  useTrainingDecks,
+  useIsTrainingInverted,
+} from '@/store'
 
 export const TrainingPage: FC = () => {
   const stopTraining = useStopTraining()
   const trainingDecks = useTrainingDecks()
+  const inverted = useIsTrainingInverted()
   const firstDeck = trainingDecks[0]
   const firstCard = firstDeck.cards[0]
 
@@ -16,6 +21,7 @@ export const TrainingPage: FC = () => {
       </button>
 
       <FlipCard
+        inverted={inverted}
         setTitle={firstDeck.name}
         backsideContent={firstCard.back}
         backsideLang={firstDeck.backLang}

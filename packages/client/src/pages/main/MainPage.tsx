@@ -1,4 +1,4 @@
-import { FC } from 'react'
+import { FC, useState } from 'react'
 
 import {
   useLogOut,
@@ -13,6 +13,7 @@ export const MainPage: FC = () => {
   const selectedDecks = useSelectedDecks()
   const startTraining = useStartTraining()
   const clientData = useNonNullClientData()
+  const [inverted, setInverted] = useState(false)
   const toggleSelectedDeck = useToggleSelectedDeck()
 
   const selectedCardsCount = clientData.groups
@@ -28,6 +29,8 @@ export const MainPage: FC = () => {
         <div className="id">id {clientData.id}</div>
         <button onClick={logOut}>Выйти из профиля</button>
       </div>
+
+      <h3 className="groups-header">Группы</h3>
 
       {clientData.groups.map(group => (
         <div key={group.id} className="group">
@@ -58,10 +61,24 @@ export const MainPage: FC = () => {
         </div>
       ))}
 
+      <div className="settings">
+        <h3>Параметры тренировки</h3>
+
+        <label>
+          <input
+            type="checkbox"
+            checked={inverted}
+            onChange={({ target }) => setInverted(target.checked)}
+          />
+
+          <span>Карты рубашкой вверх</span>
+        </label>
+      </div>
+
       <button
         className="start"
-        onClick={startTraining}
         disabled={selectedCardsCount < 2}
+        onClick={() => startTraining(inverted)}
       >
         Начать тренировку
       </button>

@@ -99,7 +99,7 @@ const exampleData: ClientData = {
                 postfix: ['Передвигаться шагом'],
               },
               back: {
-                size: 80,
+                size: 96,
                 text: ['Go'],
                 prefix: ['verb'],
                 postfix: ['To move', 'from one place to another'],

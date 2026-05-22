@@ -12,8 +12,8 @@ type DataActions = {
 
 type TrainingActions = {
   stopTraining: () => void
-  startTraining: () => void
   toggleSelectedDeck: (id: number) => void
+  startTraining: (inverted: boolean) => void
 }
 
 type ClientStoreActions = AuthActions & DataActions & TrainingActions
@@ -22,8 +22,8 @@ export type AppPage = 'auth' | 'main' | 'training'
 
 export type ClientStoreState = {
   selectedDecks: number[]
-  trainingInProgress: boolean
   clientData: null | ClientData
+  trainingInProgress: null | 'regular' | 'inverted'
 }
 
 export type ClientStore = ClientStoreState & ClientStoreActions

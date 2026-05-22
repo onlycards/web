@@ -9,4 +9,5 @@ export {
   useTrainingDecks,
   useNonNullClientData,
   useToggleSelectedDeck,
+  useIsTrainingInverted,
 } from './selectors'
