@@ -42,8 +42,8 @@ export const useTrainingDecks = (): DeckForClient[] => {
   return useMemo(
     () =>
       clientData.groups
-        .flatMap(group => group.decks)
-        .filter(deck => selectedDecks.includes(deck.id)),
+        .flatMap(({ decks }) => decks)
+        .filter(({ id }) => selectedDecks.includes(id)),
     [clientData, selectedDecks],
   )
 }
