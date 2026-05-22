@@ -8,7 +8,8 @@
     "build": "vite build"
   },
   "dependencies": {
+    "@onlycards/service": "*",
     "@onlycards/ui": "*",
-    "@onlycards/service": "*"
+    "array-shuffle": "^4.1.0"
   }
 }
