@@ -99,10 +99,10 @@ const exampleData: ClientData = {
                 postfix: ['Передвигаться шагом'],
               },
               back: {
-                size: 72,
+                size: 80,
                 text: ['Go'],
                 prefix: ['verb'],
-                postfix: ['To move from one place', 'to another'],
+                postfix: ['To move', 'from one place to another'],
               },
             },
             {
@@ -195,6 +195,31 @@ const exampleData: ClientData = {
                 text: ['Amigo'],
                 prefix: ['sustantivo masculino'],
                 postfix: ['Una persona cercana'],
+              },
+            },
+          ],
+        },
+        {
+          id: 222,
+          backLang: 'es',
+          description: '',
+          frontLang: 'ru',
+          backPlayable: true,
+          name: 'Ru/Es Особые слова',
+          cards: [
+            {
+              id: 15,
+              back: {
+                size: 48,
+                postfix: [],
+                text: ['Bosque'],
+                prefix: ['sustantivo masculino'],
+              },
+              front: {
+                size: 72,
+                text: ['Лес'],
+                prefix: ['сущ., мужской род'],
+                postfix: ['Обширное пространство,', 'покрытое деревьями'],
               },
             },
           ],

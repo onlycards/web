@@ -15,6 +15,12 @@ export const MainPage: FC = () => {
   const clientData = useNonNullClientData()
   const toggleSelectedDeck = useToggleSelectedDeck()
 
+  const selectedCardsCount = clientData.groups
+    .flatMap(({ decks }) => decks)
+    .filter(({ id }) => selectedDecks.includes(id))
+    .map(({ cards }) => cards.length)
+    .reduce((acc, cur) => acc + cur, 0)
+
   return (
     <div className="main-page">
       <div className="profile">
@@ -34,11 +40,14 @@ export const MainPage: FC = () => {
                   <label>
                     <input
                       type="checkbox"
+                      disabled={!deck.cards.length}
                       checked={selectedDecks.includes(deck.id)}
                       onChange={() => toggleSelectedDeck(deck.id)}
                     />
 
-                    <span>{deck.name}</span>
+                    <span>
+                      {deck.name} ({deck.cards.length})
+                    </span>
                   </label>
                 </li>
               ))}
@@ -52,7 +61,7 @@ export const MainPage: FC = () => {
       <button
         className="start"
         onClick={startTraining}
-        disabled={!selectedDecks.length}
+        disabled={selectedCardsCount < 2}
       >
         Начать тренировку
       </button>
