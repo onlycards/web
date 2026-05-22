@@ -14,6 +14,7 @@ const exampleData: ClientData = {
           backLang: 'en',
           description: '',
           frontLang: 'ru',
+          backPlayable: true,
           name: 'Ru/En Существительные',
           cards: [
             {
@@ -50,6 +51,6 @@ const exampleData: ClientData = {
 export const getClientData = () =>
   new Promise<ClientData | null>(resolve => {
     setTimeout(() => {
-      resolve(Math.random() > 0.5 ? exampleData : null)
+      resolve(Math.random() > 0.4 ? exampleData : null)
     }, 400)
   })

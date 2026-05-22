@@ -1,0 +1,88 @@
+.main-page {
+  display: flex;
+  flex-direction: column;
+
+  .profile {
+    width: 340px;
+    margin: 32px auto;
+    display: flex;
+    align-items: flex-end;
+    gap: 8px;
+    flex-wrap: wrap;
+
+    .name {
+      color: black;
+      font-size: 18px;
+    }
+
+    .id {
+      color: dimgray;
+    }
+
+    button {
+      border: none;
+      opacity: 0.8;
+      align-self: stretch;
+      margin-left: 16px;
+    }
+  }
+
+  .group {
+    width: 340px;
+    margin: 16px auto;
+
+    .name {
+      margin-bottom: 8px;
+      font-size: 18px;
+      color: gray;
+      font-weight: 600;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+
+      label {
+        display: flex;
+        align-items: center;
+        height: 24px;
+        gap: 4px;
+
+        input {
+          margin: 0;
+          width: 16px;
+          height: 16px;
+        }
+      }
+    }
+  }
+
+  .start {
+    width: 340px;
+    margin: 16px auto;
+    font-size: 20px;
+    border-radius: 8px;
+    color: white;
+    transition: 200ms linear;
+    background: darkgreen;
+    height: 48px;
+    border: unset;
+
+    &:disabled {
+      filter: blur(1px) grayscale(1);
+      opacity: 0.2;
+      cursor: not-allowed;
+    }
+
+    &:not(:disabled):hover {
+      background: green;
+      box-shadow: 0 0 0 2px white, 0 0 0 4px lightgreen;
+    }
+
+    &:not(:disabled):active {
+      transform: scale(0.99);
+      filter: grayscale(0.4);
+    }
+  }
+}
