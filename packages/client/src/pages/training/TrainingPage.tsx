@@ -1,18 +1,14 @@
 import { FC } from 'react'
 import { FlipCard } from '@onlycards/ui'
 
-import {
-  useStopTraining,
-  useTrainingDecks,
-  useIsTrainingInverted,
-} from '@/store'
+import { useStopTraining } from '@/store'
+
+import { useComposedDeck } from './use-composed-deck'
 
 export const TrainingPage: FC = () => {
   const stopTraining = useStopTraining()
-  const trainingDecks = useTrainingDecks()
-  const inverted = useIsTrainingInverted()
-  const firstDeck = trainingDecks[0]
-  const firstCard = firstDeck.cards[0]
+  const composedDeck = useComposedDeck()
+  const firstCard = composedDeck[0]
 
   return (
     <div className="training-page">
@@ -20,16 +16,7 @@ export const TrainingPage: FC = () => {
         Выйти из тренировки
       </button>
 
-      <FlipCard
-        inverted={inverted}
-        deckTitle={firstDeck.name}
-        backsideContent={firstCard.back}
-        backsideLang={firstDeck.backLang}
-        frontsideContent={firstCard.front}
-        frontsideLang={firstDeck.frontLang}
-        playableBackside={firstDeck.backPlayable}
-        playableFrontside={firstDeck.frontPlayable}
-      />
+      <FlipCard {...firstCard.props} key={firstCard.id} />
     </div>
   )
 }
