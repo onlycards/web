@@ -98,7 +98,7 @@ export const CardEditor: FC = () => {
 
         <div className="example">
           <CardFace
-            setTitle={title}
+            deckTitle={title}
             otherLang={secondLang}
             currentLang={firstLang}
             playable={frontPlayable}
@@ -149,7 +149,7 @@ export const CardEditor: FC = () => {
         <div className="example">
           <CardFace
             backside
-            setTitle={title}
+            deckTitle={title}
             otherLang={firstLang}
             playable={backPlayable}
             currentLang={secondLang}

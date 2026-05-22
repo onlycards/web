@@ -1,7 +1,7 @@
 import { SupportedLang, CardFaceContent } from '@onlycards/service'
 
 export type CardFaceProps = {
-  setTitle: string
+  deckTitle: string
   disabled?: boolean
   playable?: boolean
   backside?: boolean
@@ -12,7 +12,7 @@ export type CardFaceProps = {
 }
 
 export type FlipCardProps = {
-  setTitle: string
+  deckTitle: string
   inverted?: boolean
   playableBackside?: boolean
   backsideLang: SupportedLang
