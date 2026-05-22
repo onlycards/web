@@ -6,7 +6,7 @@ import { FlipCardProps } from '../types'
 
 export const FlipCard: FC<FlipCardProps> = ({
   inverted,
-  setTitle,
+  deckTitle,
   backsideLang,
   frontsideLang,
   backsideContent,
@@ -27,7 +27,7 @@ export const FlipCard: FC<FlipCardProps> = ({
     <FlipCardInner
       key={key}
       inverted={inverted}
-      setTitle={setTitle}
+      deckTitle={deckTitle}
       backsideLang={backsideLang}
       frontsideLang={frontsideLang}
       backsideContent={backsideContent}
@@ -40,7 +40,7 @@ export const FlipCard: FC<FlipCardProps> = ({
 
 const FlipCardInner: FC<FlipCardProps> = ({
   inverted,
-  setTitle,
+  deckTitle,
   backsideLang,
   frontsideLang,
   backsideContent,
@@ -59,7 +59,7 @@ const FlipCardInner: FC<FlipCardProps> = ({
       >
         <div className={`side ${inverted && 'back'}`}>
           <CardFace
-            setTitle={setTitle}
+            deckTitle={deckTitle}
             onClick={toggleFlipped}
             otherLang={backsideLang}
             content={frontsideContent}
@@ -71,7 +71,7 @@ const FlipCardInner: FC<FlipCardProps> = ({
         <div className={`side ${!inverted && 'back'}`}>
           <CardFace
             backside
-            setTitle={setTitle}
+            deckTitle={deckTitle}
             onClick={toggleFlipped}
             otherLang={frontsideLang}
             content={backsideContent}

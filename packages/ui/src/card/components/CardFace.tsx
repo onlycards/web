@@ -5,9 +5,9 @@ import { CardFaceProps } from '../types'
 export const CardFace: FC<CardFaceProps> = ({
   onClick,
   disabled,
-  setTitle,
   playable,
   backside,
+  deckTitle,
   otherLang,
   currentLang,
   content: { text, size, prefix, postfix },
@@ -25,7 +25,7 @@ export const CardFace: FC<CardFaceProps> = ({
     <div className={`card-face ${backside ? 'back' : 'front'}`}>
       <div className="info">
         <div className={`flag ${currentLang}`} />
-        <span>{setTitle}</span>
+        <span>{deckTitle}</span>
         <div className={`flag ${otherLang}`} />
       </div>
 

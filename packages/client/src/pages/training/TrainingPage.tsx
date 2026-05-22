@@ -22,7 +22,7 @@ export const TrainingPage: FC = () => {
 
       <FlipCard
         inverted={inverted}
-        setTitle={firstDeck.name}
+        deckTitle={firstDeck.name}
         backsideContent={firstCard.back}
         backsideLang={firstDeck.backLang}
         frontsideContent={firstCard.front}
