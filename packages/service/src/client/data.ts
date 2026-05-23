@@ -120,21 +120,6 @@ const exampleData: ClientData = {
                 postfix: ['Воспринимать глазами'],
               },
             },
-            {
-              id: 11,
-              back: {
-                size: 48,
-                text: ['Speak'],
-                prefix: ['verb'],
-                postfix: ['To say words'],
-              },
-              front: {
-                size: 32,
-                text: ['Говорить'],
-                prefix: ['глагол'],
-                postfix: ['Произносить слова'],
-              },
-            },
           ],
         },
       ],
@@ -183,7 +168,7 @@ const exampleData: ClientData = {
               },
             },
             {
-              id: 15,
+              id: 159,
               front: {
                 size: 60,
                 text: ['Друг'],

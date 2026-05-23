@@ -14,40 +14,6 @@ export const FlipCard: FC<FlipCardProps> = ({
   playableBackside,
   playableFrontside,
 }) => {
-  const key = [
-    frontsideContent.text.join(),
-    frontsideContent.prefix.join(),
-    frontsideContent.postfix.join(),
-    backsideContent.text.join(),
-    backsideContent.prefix.join(),
-    backsideContent.postfix.join(),
-  ].join()
-
-  return (
-    <FlipCardInner
-      key={key}
-      inverted={inverted}
-      deckTitle={deckTitle}
-      backsideLang={backsideLang}
-      frontsideLang={frontsideLang}
-      backsideContent={backsideContent}
-      frontsideContent={frontsideContent}
-      playableBackside={playableBackside}
-      playableFrontside={playableFrontside}
-    />
-  )
-}
-
-const FlipCardInner: FC<FlipCardProps> = ({
-  inverted,
-  deckTitle,
-  backsideLang,
-  frontsideLang,
-  backsideContent,
-  frontsideContent,
-  playableBackside,
-  playableFrontside,
-}) => {
   const [flipped, setFlipped] = useState(false)
   const toggleFlipped = () => setFlipped(!flipped)
 

@@ -1,0 +1,53 @@
+.training-deck {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+
+  .deck {
+    position: relative;
+
+    .current-card {
+      position: absolute;
+      inset: 0;
+    }
+  }
+
+  .controls {
+    display: flex;
+    gap: 16px;
+    opacity: 0.8;
+
+    button {
+      width: 64px;
+      height: 64px;
+      color: white;
+      border: unset;
+      font-size: 32px;
+      border-radius: 8px;
+      transition: 200ms linear;
+      box-shadow: 4px 4px 10px 2px #223c5033;
+
+      &:active {
+        transform: scale(0.99);
+        filter: grayscale(0.4);
+      }
+
+      &.check {
+        background-color: green;
+
+        &:hover {
+          background-color: limegreen;
+        }
+      }
+
+      &.cross {
+        background-color: darkred;
+
+        &:hover {
+          background-color: red;
+        }
+      }
+    }
+  }
+}
