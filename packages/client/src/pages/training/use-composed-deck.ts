@@ -1,9 +1,8 @@
 import { useMemo } from 'react'
+import { TrainingCard } from '@onlycards/ui'
 import { arrayToShuffled } from 'array-shuffle'
 
 import { useTrainingDecks, useIsTrainingInverted } from '@/store'
-
-import { TrainingCard } from './types'
 
 export const useComposedDeck = (): TrainingCard[] => {
   const trainingDecks = useTrainingDecks()
@@ -17,6 +16,7 @@ export const useComposedDeck = (): TrainingCard[] => {
             id: card.id,
             props: {
               inverted,
+              id: card.id,
               deckTitle: deck.name,
               backsideContent: card.back,
               backsideLang: deck.backLang,
