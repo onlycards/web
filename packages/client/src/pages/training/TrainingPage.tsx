@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import { TrainingDeck } from '@onlycards/ui'
+import { TrainingDeck } from '@onlycards/core'
 
 import { useStopTraining } from '@/store'
 
