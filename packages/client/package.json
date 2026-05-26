@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@onlycards/service": "*",
-    "@onlycards/ui": "*",
+    "@onlycards/core": "*",
     "array-shuffle": "^4.1.0"
   }
 }

@@ -1,5 +1,5 @@
 import { useMemo } from 'react'
-import { TrainingCard } from '@onlycards/ui'
+import { TrainingCard } from '@onlycards/core'
 import { arrayToShuffled } from 'array-shuffle'
 
 import { useTrainingDecks, useIsTrainingInverted } from '@/store'
