@@ -32,7 +32,7 @@ export const getZoneRange = (
 export const getRandomInteger = (from: number, to: number) =>
   Math.floor(Math.random() * (to - from + 1) + from)
 
-const moveFirstToZone = <T>(arr: T[], zoneIndex: number): T[] => {
+export const moveFirstToZone = <T>(arr: T[], zoneIndex: number): T[] => {
   const edge =
     Math.max(1, getRandomInteger(...getZoneRange(arr.length, zoneIndex))) + 1
 
