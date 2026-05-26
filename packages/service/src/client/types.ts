@@ -1,6 +1,6 @@
 import { SupportedLang, CardFaceContent } from '@/common'
 
-export type CardForClient = {
+type CardForClient = {
   id: number
   back: CardFaceContent
   front: CardFaceContent
@@ -17,7 +17,7 @@ export type DeckForClient = {
   frontLang: SupportedLang
 }
 
-export type GroupForClient = {
+type GroupForClient = {
   id: number
   name: string
   description: string
