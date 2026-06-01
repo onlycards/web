@@ -17,7 +17,7 @@ export type DeckForClient = {
   frontLang: SupportedLang
 }
 
-type GroupForClient = {
+export type GroupForClient = {
   id: number
   name: string
   description: string
